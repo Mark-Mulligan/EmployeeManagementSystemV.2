@@ -15,8 +15,7 @@ This application is built on node.js and uses mySQL to store and interact with a
 ## Installation
 
 ### Run the Project Locally
-** This project requires node.js so make sure that is installed on your system before doing anything else. **
-** Also, this project uses a mySQL database so make sure that is installed.  I would also recommending installing mySQL Workbench so it is easier to populate create and populate the database for this project.  
+** This project requires node.js and mySQL so make sure these are installed on your system before doing anything else. I would also recommending installing mySQL Workbench so it is easier to populate create and populate the database for this project. **
 
 * Step 1: Navigate to the directory you want to store the project. Clone this your repository to your local computer using the command below. 
 ```bash
@@ -51,7 +50,7 @@ node server.js
 
 <img src="./images/menuExample.png" alt="program running in the command line" width="500px" height="250px">
 
-Here is an example of the information displayed in one of the tables in the command lines.
+* Here is an example of the information displayed in one of the tables in the command lines.
 
 <img src="./images/tableExample.png" alt="table of employees" width="500px" height="250px"> 
 
