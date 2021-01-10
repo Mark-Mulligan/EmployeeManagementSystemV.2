@@ -30,7 +30,7 @@ function handleMainMenuSelect(optionSelected) {
             viewAllEmployees('department');
             break;
         case 'View All Employees By Manager':
-            viewAllEmployees('manager');
+            viewAllEmployees('manager');    
             break;
         case 'View All Employees Alphabetically':
             viewAllEmployees('last_name');
@@ -113,6 +113,7 @@ function createEmployee() {
                     let managerId = util.getIdOfEmployee(employeesObj, manager.firstName, manager.lastName);
                     orm.createEmployee(res.firstName, res.lastName, roleId, managerId, function(res) {
                         console.log(res);
+                        continueProgram();
                     });
                 }
             })
@@ -129,6 +130,7 @@ function deleteEmployee () {
             let employeeId = util.getIdOfEmployee(employeesObj, selectedEmployee.firstName, selectedEmployee.lastName);
             orm.deleteEmployee(employeeId, selectedEmployee, function(res) {
                 console.log(res);
+                continueProgram();
             })
         })
     })
